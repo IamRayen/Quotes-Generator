@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fast Quote Generator</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body class="d-flex flex-column justify-content-center align-items-center">
+        <div class="Title-Wrapper  mb-5">
+            <h1 class="Title">Unique Quotes Generator</h1>
+        </div>
+        <div class="Content-wrapper  d-sm-flex">
+            <section
+                class="Content d-flex me-lg-5 flex-column justify-content-between"
+            >
+                <article
+                    class="container d-flex flex-column justify-content-evenly align-items-center mb-5"
+                >
+                    <p id="quote" class="mx-4 lead ">
+                        "Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Modi impedit non vero maiores in aperiam adipisci
+                        inventore, odit tempore, iure earum corporis voluptatum
+                        animi fugit sed veritatis ducimus rerum asperiores!"
+                    </p>
+                    <h4 id="author" class=" text-end">Author</h4>
+
+                    <div class="articleBtns d-flex justify-content-evenly ">
+                        <div class="changeQuoteBtns ">
+                            <button class="changeQuoteBtn" id="goleft">
+                                <i class="bi bi-arrow-left"></i>
+                            </button>
+                            <button class="changeQuoteBtn" id="goright">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="copieBtn-wrapper d-flex align-items-center justify-content-center ">
+                            <button class="copieBtn p-2">Copy <i class="bi bi-clipboard-fill"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <div
+                    class="shareBtns container d-flex justify-content-start align-items-center"
+                >
+                    <h3 class="me-5">Share:</h3>
+                    <button class="btn">
+                        <i class="bi bi-twitter"></i>
+                    </button>
+                    <button class="btn">
+                        <i class="bi bi-instagram"></i>
+                    </button>
+                    <button class="btn">
+                        <i class="bi bi-facebook"></i>
+                    </button>
+                </div>
+            </section>
+
+            <section
+                class="genBtn-wrapper ms-lg-5 d-flex justify-content-center align-items-center"
+            >
+                <button class="genBtn">generate</button>
+            </section>
+        </div>
+
+        <!--Scripts-->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <script src="localQuotes.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -12,20 +12,35 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='84' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2343AA8B' fill-opacity='0.2' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   color: #b2b09b;
 }
+body .Title-Wrapper {
+  min-height: 15vh;
+}
+body .Content-wrapper {
+  position: relative;
+  min-height: 70vh;
+}
+body .Content-wrapper .Content {
+  width: 80%;
+  position: relative;
+}
 body .Content-wrapper .Content article {
-  height: 300px;
+  min-height: 75%;
+  width: 100%;
+  position: relative;
 }
 body .Content-wrapper .Content article #quote {
-  width: 600px;
-  height: 120px;
+  height: fit-content;
+  width: 80%;
+  font-size: 1.2em;
   color: white;
 }
 body .Content-wrapper .Content article #author {
   width: 100%;
-  height: 30px;
+  height: fit-content;
 }
 body .Content-wrapper .Content article .articleBtns {
   width: 100%;
+  height: fit-content;
 }
 body .Content-wrapper .Content article .articleBtns .changeQuoteBtns .changeQuoteBtn {
   height: 60px;
@@ -53,6 +68,9 @@ body .Content-wrapper .Content article .articleBtns .copieBtn-wrapper .copieBtn 
 body .Content-wrapper .Content article .articleBtns .copieBtn-wrapper:hover > .copieBtn {
   color: white;
 }
+body .Content-wrapper .Content .shareBtns {
+  min-height: 25%;
+}
 body .Content-wrapper .Content .shareBtns .btn {
   width: 80px;
   height: 80px;
@@ -73,6 +91,12 @@ body .Content-wrapper .Content .shareBtns .btn:hover .bi {
   color: white;
   text-shadow: 5px 5px 0px #f0143c;
 }
+body .Content-wrapper .genBtn-wrapper {
+  width: 20%;
+  min-width: 220px;
+  min-height: 220px;
+  position: relative;
+}
 body .Content-wrapper .genBtn-wrapper .genBtn {
   border-radius: 50%;
   border: none;
@@ -88,4 +112,20 @@ body .Content-wrapper .genBtn-wrapper .genBtn {
 body .Content-wrapper .genBtn-wrapper .genBtn:hover {
   color: white;
   transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+  body .Content-wrapper .genBtn-wrapper .genBtn {
+    width: 150px;
+    height: 150px;
+    font-size: 1.7em;
+  }
+}
+@media (max-width: 768px) {
+  body .Content-wrapper .Content {
+    width: 100%;
+  }
+  body .Content-wrapper .Content article #quote {
+    width: 95%;
+  }
 }

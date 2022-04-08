@@ -28,18 +28,15 @@
                 class="Content d-flex flex-column"
             >
                 <article
-                    class="d-flex flex-column justify-content-evenly align-items-center "
+                    class="d-flex flex-column justify-content-between py-5 align-items-center "
                 >
-                    <p id="quote" class="lead">
-                        "Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Modi impedit non vero maiores in aperiam adipisci
-                        inventore, odit tempore, iure earum corporis voluptatum
-                        animi fugit sed veritatis ducimus rerum asperiores!"
+                    <p id="quote" class="lead p-lg-5">
+                        
                     </p>
-                    <h4 id="author" class="text-center">Author</h4>
+                    <h4 id="author" class="text-end pe-5"></h4>
 
                     <div class="articleBtns d-flex justify-content-evenly">
-                        <div class="changeQuoteBtns">
+                        <div class="changeQuoteBtns d-none">
                             <button class="changeQuoteBtn" id="goleft">
                                 <i class="bi bi-arrow-left"></i>
                             </button>
@@ -50,9 +47,9 @@
                         <div
                             class="copieBtn-wrapper d-flex align-items-center justify-content-center"
                         >
-                            <button class="copieBtn p-2">
+                            <a class="copieBtn  p-2" tabindex="0" data-bs-trigger="focus" id="copy" data-bs-toggle="popover" data-bs-content="Copied" data-bs-placement="top">
                                 Copy <i class="bi bi-clipboard-fill"></i>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -61,14 +58,8 @@
                     class="shareBtns d-flex justify-content-center align-items-center py-4"
                 >
                     <h3 class="me-5">Share:</h3>
-                    <button class="btn">
+                    <button class="Btn" id="twitter">
                         <i class="bi bi-twitter"></i>
-                    </button>
-                    <button class="btn">
-                        <i class="bi bi-instagram"></i>
-                    </button>
-                    <button class="btn">
-                        <i class="bi bi-facebook"></i>
                     </button>
                 </div>
             </section>
@@ -76,7 +67,7 @@
             <section
                 class="genBtn-wrapper d-flex justify-content-center align-items-center"
             >
-                <button class="genBtn">generate</button>
+                <button class="genBtn" id="generate">generate</button>
             </section>
         </div>
 

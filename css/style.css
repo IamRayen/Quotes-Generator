@@ -129,6 +129,13 @@ body .Content-wrapper .genBtn-wrapper .genBtn:hover {
     height: 150px;
     font-size: 1.7em;
   }
+  body .Content-wrapper .Content .shareBtns .Btn {
+    width: 60px;
+    height: 60px;
+  }
+  body .Content-wrapper .Content .shareBtns .Btn .bi {
+    font-size: 2em;
+  }
 }
 @media (max-width: 768px) {
   body .Content-wrapper .Content {
